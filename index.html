@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Geral das Marcas · 15/10</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1c1b19;--mut:#6d6a63;--line:#e4e0d6;--acc:#b5532a;
+--ok:#2f7d4f;--okbg:#e5f2ea;--at:#a36a00;--atbg:#fbf0d9;--cr:#b23a2e;--crbg:#f8e1de;--pa:#6d6a63;--pabg:#ecebe7;
+--new:#2f7d4f;--warm:#a36a00;--old:#b23a2e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151412;--card:#1f1d1a;--ink:#eeebe4;--mut:#a29e95;--line:#33302b;--acc:#e08158;
+--ok:#7cc89a;--okbg:#1d3326;--at:#e7b45a;--atbg:#3a2e14;--cr:#f08a7e;--crbg:#3d1f1b;--pa:#a29e95;--pabg:#2a2825;--new:#7cc89a;--warm:#e7b45a;--old:#f08a7e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:24px 16px 80px}
+header h1{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
+header p{margin:0;color:var(--mut)}
+.kpis{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.kpi b{font-size:22px;display:block}
+.kpi span{color:var(--mut);font-size:13px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);display:flex;gap:6px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:13px}
+nav a b{color:var(--acc)}
+.agenda{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:18px 0}
+.agenda h2{font-size:17px;margin:0 0 8px}
+.agenda ul{margin:0;padding:0;list-style:none}
+.agenda li{padding:5px 0;border-top:1px dashed var(--line)}
+.agenda li:first-child{border-top:0}
+.agenda li b{display:inline-block;min-width:110px;color:var(--acc)}
+.marca{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0;scroll-margin-top:60px}
+.mhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mhead h2{margin:0;font-size:22px}
+.saude{font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px}
+.saude.ok{color:var(--ok);background:var(--okbg)}.saude.atencao{color:var(--at);background:var(--atbg)}
+.saude.critico{color:var(--cr);background:var(--crbg)}.saude.parado{color:var(--pa);background:var(--pabg)}
+h3{font-size:14px;margin:14px 0 6px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+ul{padding-left:20px;margin:0}
+li{margin:3px 0}
+.links{font-size:13px;margin:8px 0 0}
+.links a{color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:6px}
+.box{border:1px solid var(--line);border-radius:10px;padding:2px 14px 12px}
+.box.travado{border-color:var(--at)}
+code{font-size:12.5px;background:var(--pabg);padding:1px 5px;border-radius:4px}
+details{margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-weight:600}
+.old-t{color:var(--old);font-weight:500}
+.issues{list-style:none;padding:0;margin:10px 0 0}
+.iss{padding:7px 0 7px 12px;border-left:3px solid var(--line);margin:4px 0}
+.iss.new{border-left-color:var(--new)}.iss.warm{border-left-color:var(--warm)}.iss.old{border-left-color:var(--old)}
+.iss a{color:var(--ink);text-decoration:none}
+.iss a:hover{text-decoration:underline}
+.num{color:var(--mut);font-size:12px;font-variant-numeric:tabular-nums}
+.meta{font-size:12.5px;color:var(--mut)}
+.mut{color:var(--mut)}
+.pill{font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px}
+.p0{color:var(--cr);background:var(--crbg)}.p1{color:var(--at);background:var(--atbg)}.p2{color:var(--pa);background:var(--pabg)}
+.busca{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;margin-top:10px}
+.leg{font-size:12.5px;color:var(--mut);margin-top:6px}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin:0 4px 0 10px;vertical-align:middle}
+footer{color:var(--mut);font-size:12.5px;margin-top:30px}
+
+.chk{list-style:none;padding:0}
+.chk li{padding:4px 0}
+.chk label{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.chk input{margin-top:4px;accent-color:var(--acc);flex:none}
+.chk input:checked + *, .chk label:has(input:checked){color:var(--mut);text-decoration:line-through}
+section a{color:var(--acc)}
+.marca p{margin:8px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Geral das Marcas · 15/10</h1>
+  <p>Alinhamento com o time no último dia da Manu antes das férias (15 a 29/10). O que está aberto, o que ficou da semana passada e o que cada um precisa seguir.</p>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><b>15/10</b><span>Dia do Professor · gravação</span></div>
+  <div class="kpi"><b>16/10</b><span>time solo · último dia do João</span></div>
+  <div class="kpi"><b>semana que vem</b><span>Gabi volta</span></div>
+  <div class="kpi"><b>01/11</b><span>9 anos da Øliver's</span></div>
+</div>
+
+<nav>
+  <a href="#hoje">🎯 Hoje</a>
+  <a href="#regra">⚠️ Aprovação</a>
+  <a href="#professor">🍎 Dia do Professor</a>
+  <a href="#luiza">Luiza</a>
+  <a href="#otavio">Otávio</a>
+  <a href="#joao">João</a>
+  <a href="#naorolou">🔁 Não rolou</a>
+  <a href="#frentes">🧭 Frentes</a>
+  <a href="#datas">🗓️ Datas</a>
+</nav>
+
+<section id="hoje" class="marca">
+  <div class="mhead"><h2>🎯 O que fechamos hoje, juntos</h2><span class="saude critico">hoje · 15/10</span></div>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="h1"> <b>Aprovar os conteúdos que já estão editados</b>, desta semana e das próximas. O que for sair até a volta da Gabi precisa sair aprovado hoje.</label></li>
+    <li><label><input type="checkbox" data-k="h2"> <b>Olhar o calendário juntos</b>, marca por marca: <a href="https://github.com/dev-seven7/cs-olivers/issues/238">Øliver's</a> · <a href="https://github.com/dev-seven7/cs-temakeria-universitaria/issues/241">Temakeria</a> · <a href="https://github.com/dev-seven7/cs-langs/issues/81">Lang's</a> · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/20">Ogro</a> · <a href="https://github.com/dev-seven7/cs-rob-food/issues/117">Grupo ROB</a></label></li>
+    <li><label><input type="checkbox" data-k="h3"> <b>Recapitular a gravação de hoje</b> (Øliver's, Lang's e Temakeria): pautas validadas, logística, produtos e arquivos no Drive · <a href="https://github.com/dev-seven7/cs-olivers/issues/249">olivers#249</a></label></li>
+    <li><label><input type="checkbox" data-k="h4"> <b>Vídeo da Ella Fernandes</b> (Temakeria, pedido de 13/10, conteúdo de trend): mandar pra aprovar e soltar hoje ou no máximo amanhã · <a href="https://github.com/dev-seven7/cs-temakeria-universitaria/issues/243">TMK#243</a></label></li>
+    <li><label><input type="checkbox" data-k="h5"> <b>Dia do Professor nas 4 marcas</b> (detalhes abaixo)</label></li>
+  </ul>
+</section>
+
+<section id="regra" class="marca" style="border-color:var(--cr)">
+  <div class="mhead"><h2>⚠️ Todo conteúdo é aprovado antes de sair</h2><span class="saude critico">regra</span></div>
+  <p>Feed, stories agendados, TikTok, YouTube e conteúdo de parceiro: nada vai pro ar sem passar pela aprovação.</p>
+  <p>Eu sei que às vezes isso gera retrabalho, mas não dá pra sair conteúdo sem tratar a imagem, de qualquer jeito. Ontem saiu um conteúdo da Øliver's que foi agendado sem ninguém conferir antes. É por isso que eu peço pra ver o lote toda semana, e esse lote não tem chegado. Precisamos seguir o que a gente combina e o que a gente pede.</p>
+  <p class="mut">Está na rotina social de cada marca: "Revisão e aprovação do lote da semana com a Manu, antes de qualquer publicação" e "Pedir o conteúdo pra aprovação antes de o parceiro subir". Na semana de 05 a 11/10, nenhuma das 5 rotinas teve esse check marcado.</p>
+</section>
+
+<section id="professor" class="marca">
+  <div class="mhead"><h2>🍎 Dia do Professor · hoje</h2><span class="saude atencao">não deixar passar</span></div>
+  <div class="grid">
+    <div class="box"><h3>🍕 Øliver's</h3><ul class="chk">
+      <li><label><input type="checkbox" data-k="p1"> Cupom <code>PROFESSOR</code> R$ 10 OFF (confirmado e criado)</label></li>
+      <li><label><input type="checkbox" data-k="p2"> Carrossel de memes valorizando os professores, na linha do Dia das Crianças e do Dia do Estudante. Tom leve, nem muito descontraído nem formal</label></li>
+    </ul><p class="links"><a href="https://github.com/dev-seven7/cs-olivers/issues/238#issuecomment-6177813440">olivers#238</a></p></div>
+    <div class="box"><h3>🍔 Ogro</h3><ul class="chk">
+      <li><label><input type="checkbox" data-k="p3"> Story de reforço: "fiquem de olho, nos próximos dias vamos contar quem é o professor mais viciado em Ogro. Será que é você? 🫵"</label></li>
+      <li><label><input type="checkbox" data-k="p4"> Prints de quem votou ontem e hoje pra Kiara registrar</label></li>
+      <li><label><input type="checkbox" data-k="p5"> <b>Lista de votantes pra Alline hoje</b>, no grupo da Ogro. Ela devolve quem mais pediu até sexta</label></li>
+      <li><label><input type="checkbox" data-k="p6"> Entrega semana que vem: o Igor entrega com alguém da equipe da Ogro, e eles mesmos gravam</label></li>
+    </ul><p class="links"><a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/20#issuecomment-6176731109">ogro#20 · passo a passo</a></p></div>
+    <div class="box"><h3>🍔 Lang's</h3><ul class="chk">
+      <li><label><input type="checkbox" data-k="p7"> Liberar pro professor o mesmo desconto do estudante e dar push: post com os 10% + Combo Mr. Langs a R$ 49,90</label></li>
+    </ul><p class="links"><a href="https://github.com/dev-seven7/cs-langs/issues/81">langs#81</a></p></div>
+    <div class="box"><h3>🍣 Temakeria</h3><ul class="chk">
+      <li><label><input type="checkbox" data-k="p8"> Story com enquete: "tem professor por aqui?", só pra não passar em branco</label></li>
+    </ul><p class="links"><a href="https://github.com/dev-seven7/cs-temakeria-universitaria/issues/241">TMK#241</a></p></div>
+  </div>
+</section>
+
+<section id="luiza" class="marca">
+  <div class="mhead"><h2>👤 Luiza</h2><span class="saude atencao">muita coisa sem resposta no GitHub</span></div>
+  <h3>🤝 Parceiros · você assume os da Manu de 15 a 29/10</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="l1"> Contatos de todas as influenciadoras + regras do período: <a href="https://github.com/dev-seven7/cs-olivers/issues/245#issuecomment-6156093001">olivers#245</a></label></li>
+    <li><label><input type="checkbox" data-k="l2"> Pedido sempre com 2 a 3 dias de antecedência. Nunca aceitar de um dia pro outro, só exceção bem pontual e controlada</label></li>
+    <li><label><input type="checkbox" data-k="l3"> Todo pedido vai pra Central com data, horário e telefone, e é registrado na Kiara no controle do mês</label></li>
+    <li><label><input type="checkbox" data-k="l4"> Pedir o conteúdo do parceiro pra aprovação antes de ele subir</label></li>
+    <li><label><input type="checkbox" data-k="l5"> Presente Copa: conteúdos das influs de Copacabana nos stories durante o fim de semana + subir na LP · <a href="https://github.com/dev-seven7/cs-olivers/issues/196">olivers#196</a></label></li>
+  </ul>
+  <h3>🔎 Mapeamentos</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="l6"> <b>Influenciadoras da Região Oceânica</b> pra inauguração da Øliver's Piratininga, com o Otávio · mínimo 10 nomes · <b>prazo 23/10</b> · <a href="https://github.com/dev-seven7/cs-olivers/issues/245#issuecomment-6156093001">olivers#245</a></label></li>
+    <li><label><input type="checkbox" data-k="l7"> <b>Influenciadores de São Gonçalo pra Ogro</b>: a lista foi feita? Levantar perfis com a cara da Ogro, cruzar com a base multimarca de SG e alinhar com o Igor antes de contatar · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/21">ogro#21</a></label></li>
+  </ul>
+  <h3>📲 Conteúdo e calendário</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="l8"> <b>Grupo ROB sem post há vários dias</b>: cadê os criativos com as narrativas novas da Gabi? Soltar os que já foram aprovados · <a href="https://github.com/dev-seven7/cs-rob-food/issues/117#issuecomment-6177814674">rob#117</a></label></li>
+    <li><label><input type="checkbox" data-k="l9"> Comunidade da Øliver's: pedir à Kiara as 40 mensagens-modelo (curiosidades, Torta de Limão, assunto em alta, quiz, cupom surpresa) e validar · <a href="https://github.com/dev-seven7/cs-olivers/issues/238#issuecomment-6177813440">olivers#238</a></label></li>
+    <li><label><input type="checkbox" data-k="l10"> Ogro: 2º vídeo do Igor falando na cozinha (a Ogrostela já saiu) e soltar o vídeo do Igor com frequência, principalmente nos fins de semana · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/20#issuecomment-6177814338">ogro#20</a></label></li>
+    <li><label><input type="checkbox" data-k="l11"> Ogro: avaliar a comunidade no Instagram · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/20#issuecomment-6177814338">ogro#20</a></label></li>
+    <li><label><input type="checkbox" data-k="l12"> Abrir a rotina social de 12 a 18/10 das 5 marcas. A última aberta foi a de 05 a 11/10</label></li>
+    <li><label><input type="checkbox" data-k="l13"> Relatório semanal das marcas · <a href="https://github.com/dev-seven7/governance-s7/issues/85">governance#85</a></label></li>
+  </ul>
+</section>
+
+<section id="otavio" class="marca">
+  <div class="mhead"><h2>👤 Otávio</h2><span class="saude atencao">sem resposta desde ontem</span></div>
+  <h3>🍣 Temakeria</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="o1"> Como está o andamento dos conteúdos? Aprovar hoje o que precisa sair no fim de semana, na próxima semana e na outra · <a href="https://github.com/dev-seven7/cs-temakeria-universitaria/issues/241#issuecomment-6177813920">TMK#241</a></label></li>
+    <li><label><input type="checkbox" data-k="o2"> Vídeo da Ella Fernandes: mandar pra aprovar assim que ela enviar</label></li>
+    <li><label><input type="checkbox" data-k="o3"> Fortalecer São Gonçalo: mais parceiros, trends e conteúdo de qualidade. Araruama deu um boom, mas SG não pode cair</label></li>
+    <li><label><input type="checkbox" data-k="o4"> Continuar com o react do Felipe Vecchi a partir dos conteúdos novos</label></li>
+  </ul>
+  <h3>🍔 Lang's</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="o5"> Campeonato de card games (18/10): Reels hoje. Ainda faltam horário, ingresso, inscrição e premiação · <a href="https://github.com/dev-seven7/cs-langs/issues/81">langs#81</a></label></li>
+    <li><label><input type="checkbox" data-k="o6"> Halloween: convite com as 3 categorias e os prêmios, e ajuda na decoração do salão (pedido do Anderson)</label></li>
+  </ul>
+  <h3>🎬 Ogro e canais</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="o7"> 2º vídeo do Igor na cozinha, com a Luiza · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/20#issuecomment-6177814338">ogro#20</a></label></li>
+    <li><label><input type="checkbox" data-k="o8"> Criativos de topo, meio e fundo pra ativação da conta de anúncios da Ogro (POVs, Papo de Ogro, Da chapa pra sua casa) · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/19">ogro#19</a></label></li>
+    <li><label><input type="checkbox" data-k="o9"> TikTok e YouTube agendados em todas as marcas</label></li>
+    <li><label><input type="checkbox" data-k="o10"> Mapeamento da Região Oceânica com a Luiza, até 23/10</label></li>
+  </ul>
+</section>
+
+<section id="joao" class="marca">
+  <div class="mhead"><h2>🎨 João</h2><span class="saude critico">penúltimo dia hoje · último amanhã</span></div>
+  <p class="mut">Meta: fechar tudo o que está na daily dele. <a href="https://dev-seven7.github.io/daily-joao-theo/">Daily do João</a></p>
+  <h3>Hoje, pra aprovar</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="j1"> Destaques do Grupo ROB (6 destaques, fotos e narrativa prontas desde 06/10) · <a href="https://github.com/dev-seven7/cs-rob-food/issues/14">rob#14</a></label></li>
+    <li><label><input type="checkbox" data-k="j2"> Destaques da Øliver's: À La Carte + Valor Especial (rodízio) · <a href="https://github.com/dev-seven7/cs-olivers/issues/105">olivers#105</a></label></li>
+    <li><label><input type="checkbox" data-k="j3"> Impressos do Gatola: banner (iFood, Accon, 99Food), display de mesa, panfleto 14x10 e motion LED · <a href="https://github.com/dev-seven7/cs-olivers/issues/244">olivers#244</a></label></li>
+  </ul>
+  <h3>Até amanhã, 16/10</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" data-k="j4"> Artes de social: <a href="https://github.com/dev-seven7/cs-olivers/issues/238#issuecomment-6171606602">Øliver's</a> · <a href="https://github.com/dev-seven7/cs-temakeria-universitaria/issues/241#issuecomment-6171605466">Temakeria</a> · <a href="https://github.com/dev-seven7/cs-langs/issues/81#issuecomment-6171606042">Lang's</a></label></li>
+    <li><label><input type="checkbox" data-k="j5"> Ticket premiado dos 9 anos (golden ticket, preto com dourado) · <a href="https://github.com/dev-seven7/cs-olivers/issues/241#issuecomment-6155292661">olivers#241</a></label></li>
+    <li><label><input type="checkbox" data-k="j6"> Revisar todas as marcações no GitHub antes de encerrar</label></li>
+  </ul>
+</section>
+
+<section id="naorolou" class="marca">
+  <div class="mhead"><h2>🔁 Pontuado na semana passada e que não rolou</h2><span class="saude parado">call de 08/10 + rotinas de 05 a 11/10</span></div>
+  <p class="mut">Itens da call presencial de 08/10 (<a href="https://github.com/dev-seven7/governance-s7/issues/110">governance#110</a>) e das rotinas sociais da semana passada que continuam sem check.</p>
+  <div class="grid">
+    <div class="box travado"><h3>Rotina e aprovação</h3><ul>
+      <li>Rotinas sociais de 05 a 11/10: quase nada marcado nas 5 marcas (<a href="https://github.com/dev-seven7/cs-olivers/issues/246">OLV</a> · <a href="https://github.com/dev-seven7/cs-temakeria-universitaria/issues/244">TMK</a> · <a href="https://github.com/dev-seven7/cs-langs/issues/83">Lang's</a> · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/22">Ogro</a> · <a href="https://github.com/dev-seven7/cs-rob-food/issues/121">ROB</a>)</li>
+      <li>Lote da semana revisado com a Manu antes de publicar</li>
+      <li>Copies da semana seguinte escritas antes de agendar</li>
+      <li>Relatório semanal entregue</li>
+      <li>Rotina de 12 a 18/10 não foi aberta</li>
+    </ul></div>
+    <div class="box travado"><h3>Øliver's</h3><ul>
+      <li>Destaques de Rodízio + À La Carte (prazo era 06/10)</li>
+      <li>Comunidade VIP: 40 mensagens-modelo da Kiara, Luiza valida</li>
+      <li>Ativar as influs de Copacabana no Presente Copa (começou só em 13/10)</li>
+      <li>LP/formulário de parceiros pro Thiago integrar</li>
+    </ul></div>
+    <div class="box travado"><h3>Ogro</h3><ul>
+      <li>Vídeo Ogrostela em 2 versões: só 1 saiu</li>
+      <li>Planilha de parceiros: cobrar a Raquel pelos nomes que faltam</li>
+      <li>Influenciadores de SG: lista não apareceu (<a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/21">ogro#21</a>)</li>
+      <li>Comunidade no Instagram: avaliar se abre</li>
+    </ul></div>
+    <div class="box travado"><h3>Grupo ROB</h3><ul>
+      <li>Destaques do perfil (entrega era 13/10)</li>
+      <li>Criativos de franquia: 3 anúncios + vídeo de 10s "Seja sócio" pra Kiara</li>
+      <li>Revisão dos vídeos de franquia com links + narrativas pra Kiara</li>
+      <li>LinkedIn: 2º post</li>
+    </ul></div>
+    <div class="box travado"><h3>Lang's</h3><ul>
+      <li>Cupons KIDSLANGS e Halloween (R$ 12): pedido mínimo com o Anderson e criação com o Marcelo</li>
+      <li>Avisar os parceiros do salão (igreja, universidades, Kumon, academias) do benefício de R$ 10 no combo</li>
+      <li>Acesso ao YouTube da Lang's, aberto desde 01/09</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="frentes" class="marca">
+  <div class="mhead"><h2>🧭 Frentes abertas por marca</h2></div>
+  <div class="grid">
+    <div class="box"><h3>🍕 Øliver's</h3><ul>
+      <li><b>9 anos (01 a 09/11):</b> ticket premiado, envelopes no salão e imprensa · <a href="https://github.com/dev-seven7/cs-olivers/issues/241">#241</a></li>
+      <li><b>Gatola da Cartola (estreia 05/11):</b> caixa final entregue (preta e branca), impressos em aprovação · <a href="https://github.com/dev-seven7/cs-olivers/issues/244">#244</a></li>
+      <li><b>Piratininga (início de novembro):</b> marketing faz quadros (~70), adesivo da Área Kids e vídeos das TVs; a Camile manda as medidas · <a href="https://github.com/dev-seven7/cs-olivers/issues/229">#229</a></li>
+      <li><b>Presente Copa:</b> campanhas de cardápio no ar desde 14/10 · <a href="https://github.com/dev-seven7/cs-olivers/issues/196">#196</a></li>
+      <li><b>Calendários de novembro e dezembro:</b> <a href="https://github.com/dev-seven7/cs-olivers/issues/240">#240</a> · <a href="https://github.com/dev-seven7/cs-olivers/issues/243">#243</a></li>
+    </ul></div>
+    <div class="box"><h3>🍣 Temakeria</h3><ul>
+      <li><b>Araruama:</b> pós-inauguração, manter o ritmo</li>
+      <li><b>São Gonçalo:</b> fortalecer, buscar parceiros, react do Felipe Vecchi</li>
+      <li><b>Fotos do cardápio:</b> chamado Sults #239 aberto, aguardando prazo da Alline e T.I · <a href="https://github.com/dev-seven7/cs-temakeria-universitaria/issues/239">#239</a></li>
+      <li><b>Lapa:</b> inauguração sem data</li>
+    </ul></div>
+    <div class="box"><h3>🍔 Lang's</h3><ul>
+      <li><b>Card games (18/10)</b> e <b>Halloween</b> · <a href="https://github.com/dev-seven7/cs-langs/issues/81">#81</a></li>
+      <li><b>Instituições vizinhas</b> (estudante) · <a href="https://github.com/dev-seven7/cs-langs/issues/60">#60</a></li>
+    </ul></div>
+    <div class="box"><h3>🍔 Ogro</h3><ul>
+      <li><b>Dia do Professor:</b> resultado até 16/10, entrega na semana que vem</li>
+      <li><b>Site novo:</b> história do Igor no grupo pra ele e o Jimmy revisarem; depois Gabi ou Luiza passam pro Miguel finalizar as copies, e a Gabi revisa tudo na volta · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/9">#9</a></li>
+      <li><b>Delivery São Gonçalo:</b> 29/10 a confirmar (Manu perguntou à Larissa, sem resposta) · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/14">#14</a></li>
+      <li><b>Meta:</b> nada subiu ainda · <a href="https://github.com/dev-seven7/cs-ogro-steaks/issues/25">#25</a></li>
+    </ul></div>
+    <div class="box"><h3>🏢 Grupo ROB</h3><ul>
+      <li><b>Perfil sem post</b>: criativos aprovados pela Gabi parados · <a href="https://github.com/dev-seven7/cs-rob-food/issues/117">#117</a></li>
+      <li><b>Destaques</b> com o João · <a href="https://github.com/dev-seven7/cs-rob-food/issues/14">#14</a></li>
+      <li><b>OOH com o Edilson</b> · <a href="https://github.com/dev-seven7/cs-rob-food/issues/26">#26</a></li>
+      <li><b>Relatório de ROI por canal:</b> apresentado em 14/10 o que existe; faturamento × investimento segue travado · <a href="https://github.com/dev-seven7/cs-rob-food/issues/78">#78</a></li>
+    </ul></div>
+    <div class="box"><h3>🆕 Próximas frentes</h3><ul>
+      <li><b>Replicar o modelo de inauguração da Temakeria</b> (giveaway, LP com produto isca e criativos) pra <b>Øliver's Piratininga</b> e pra <b>Ogro São Gonçalo</b>. Datas ainda sem confirmação, a Manu está falando com a Clarissa</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="amanha" class="marca" style="border-color:var(--ok)">
+  <div class="mhead"><h2>🚀 Amanhã, 16/10: vocês sozinhos</h2><span class="saude ok">dia de adiantar</span></div>
+  <p>É o único dia em que vocês vão estar sozinhos. Usem com estratégia: sem reunião, sem interrupção. Adiantem o máximo que puderem, porque semana que vem a Gabi chega com tudo e a gente está na véspera dos 9 anos da Øliver's (01/11), com o Gatola, a inauguração de Piratininga e a da Ogro vindo aí. Tudo está no GitHub.</p>
+  <p>João, amanhã é seu último dia: a meta é fechar tudo o que está na sua daily.</p>
+</section>
+
+<section id="datas" class="agenda">
+  <h2>🗓️ Próximas datas</h2>
+  <ul>
+    <li><b>15/10 · hoje</b> Dia do Professor · gravação Øliver's + Lang's + Temakeria · último dia da Manu</li>
+    <li><b>16/10 · sex</b> time sozinho · último dia do João · resultado do Dia do Professor da Ogro (Alline)</li>
+    <li><b>18/10</b> card games Pokémon na Lang's</li>
+    <li><b>semana de 19/10</b> Gabi volta · entrega do presente do Dia do Professor (Igor)</li>
+    <li><b>23/10</b> prazo do mapeamento de influs da Região Oceânica</li>
+    <li><b>29/10</b> delivery Ogro São Gonçalo (a confirmar)</li>
+    <li><b>29 ou 30/10</b> Manu volta</li>
+    <li><b>01 a 09/11</b> aniversário de 9 anos da Øliver's</li>
+    <li><b>05/11</b> estreia do Gatola da Cartola</li>
+    <li><b>início de nov</b> inauguração da Øliver's Piratininga</li>
+  </ul>
+</section>
+
+<footer>Montado em 15/10/2026 a partir do GitHub da Seven7 e do log da Manu. Os checks ficam salvos só no seu navegador.</footer>
+</div>
+
+<script>
+(function(){var K='gm1510:';
+document.querySelectorAll('input[data-k]').forEach(function(i){
+ try{i.checked=localStorage.getItem(K+i.dataset.k)==='1'}catch(e){}
+ i.addEventListener('change',function(){try{localStorage.setItem(K+i.dataset.k,i.checked?'1':'0')}catch(e){}});
+});})();
+</script>
+</body>
+</html>
